@@ -1,6 +1,6 @@
 # how to red a image
-import cv2 as cv
-import sys
+# import cv2 as cv
+# import sys
 
 # img = cv.imread("images/blue_cat.jpg")
 # img_resize = cv.resize(img,(255,255))
