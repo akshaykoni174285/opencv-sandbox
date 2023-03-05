@@ -14,7 +14,7 @@ blurred = cv2.GaussianBlur(gray, (5, 5), 0)
 # edges = cv2.Canny(blurred, 50, 150)
 
 # Apply Hough transform to find circles in the image
-circles = cv2.HoughCircles(blurred, cv2.HOUGH_GRADIENT, 1, 20, param1=50, param2=30, minRadius=0, maxRadius=0)
+circles = cv2.HoughCircles(blurred, cv2.HOUGH_GRADIENT, 1, 20, param1=50, param2=30, minRadius=40, maxRadius=100)
 
 # Draw circles on the original image
 if circles is not None:

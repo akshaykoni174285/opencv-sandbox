@@ -12,6 +12,11 @@ def rescaleWindow(frame,scale=0.75):
 # cv.waitKey(0)
 # cv.destroyAllWindows()
 
+# if you want to set the resolution of live cam 
+def changeRes(width,height):
+    capture.set(3,width)
+    capture.set(4,height)
+
 
 # resizing the video window
 capture = cv.VideoCapture('videos/sample.mp4')
